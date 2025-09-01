@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020202;
+    padding-inline: min(2.1875rem);
+    color: #c7c9cc;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-block: 2.875rem;
+}
+
+@media (width > 450px) {
+    body{
+        display:grid;
+        justify-content: center;
+        padding-inline: 0;
+    }
+
+    #logo{
+        justify-content: start;
+        margin-block: 5rem;
+    }
+}
