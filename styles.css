@@ -16,6 +16,27 @@ body {
     margin-block: 2.875rem;
 }
 
+#header-title{
+    & span {
+        font: 700 1rem/1.5 "Roboto Mono", monospace;
+        text-transform: uppercase;
+        
+        background: linear-gradient(to right, #c7c9cc,  #3e3e3e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    & h1 {
+        font: 800 2.5rem/1.3 "Sora", sans-serif;
+        margin-top: .5rem;
+    }
+}
+
+.desktop-only {
+    display: none;
+}
+
 @media (width > 450px) {
     body{
         display:grid;
@@ -26,5 +47,20 @@ body {
     #logo{
         justify-content: start;
         margin-block: 5rem;
+    }
+
+    #header-title{
+        & h1 {
+            font: 800 4.5rem/1.3 "Sora", sans-serif;
+            margin-top: 1rem;
+        }
+    }
+
+    .mobile-only{
+        display: none;
+    }
+    
+    .desktop-only {
+        display: block;
     }
 }

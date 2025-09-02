@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteador de números</title>
-
+    
     <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:wght@700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="logo">
@@ -13,9 +18,25 @@
     </header>
     <section>
         <header>
-            <span>Online - Gratuito</span>
-            <h1>SORTEADOR DE NÚMEROS</h1>
+            <div id="header-title">
+                <span>Online - Gratuito</span>
+                <h1>SORTEADOR <br>DE NÚMEROS</h1>
+            </div>
+
+            <div class="desktop-only">
+                <div>
+                    <img src="assets/question.svg" alt="ícone de alguém fazendo um pergunta">
+                    <span class="span-title">Como funciona o sorteador de números?</span>
+                    <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+                </div>
+                <div>
+                    <img src="assets/question.svg" alt="ícone de alguém fazendo um pergunta">
+                    <span class="span-title">Posso escolher o intervalo dos números?</span>
+                    <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+                </div>
+            </div>
         </header>
+
 
         <aside>
             <form id="sorting-info">
@@ -81,7 +102,7 @@
             </div>
         </aside>
 
-        <footer>
+        <footer class="mobile-only">
             <div>
                 <img src="assets/question.svg" alt="ícone de alguém fazendo um pergunta">
                 <span class="span-title">Como funciona o sorteador de números?</span>
